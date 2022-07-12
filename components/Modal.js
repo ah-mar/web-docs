@@ -11,7 +11,7 @@ function Modal({ setShowModal }) {
     if(!modalInput) return;
     console.log("filename is", modalInput)
     setShowModal(false);
-    router.push(`/editor?filename=${modalInput}`)
+    router.push(`/docs/${modalInput}`)
   }
 
   return (

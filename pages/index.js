@@ -33,13 +33,9 @@ export default function Home() {
         <Gallery setShowModal={setShowModal} />
 
         {/* DocList */}
-        <DocList />
-        {showModal && (
-          <Modal setShowModal={setShowModal} />
-        )}
-        
+        <DocList setShowModal={setShowModal} />
+        {showModal && <Modal setShowModal={setShowModal} />}
       </main>
-     
     </div>
   );
 }
