@@ -11,14 +11,13 @@ import SignIn from "../components/SignIn";
 
 export default function Home() {
   const { data: session } = useSession();
-  const [showModal, setShowModal] = useState(false)
- 
+  const [showModal, setShowModal] = useState(false);
+
   //const router = useRouter();
 
   console.log("Session is", session, !session);
 
-  if(!session) return <SignIn />
-
+  if (!session) return <SignIn />;
 
   return (
     <div className="">
@@ -39,3 +38,7 @@ export default function Home() {
     </div>
   );
 }
+
+// TODOS
+// Can implement document search with fuse js
+// upgrade from draft js to lexical
